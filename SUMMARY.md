@@ -1,23 +1,26 @@
 # Table of contents
 
-* [Get Started](README.md)
+* [PerpDEX](README.md)
 
-## The Basics
+## Mechanics
 
-* [Spaces](the-basics/spaces.md)
-* [Collections](the-basics/collections.md)
-* [The GitBook editor](the-basics/the-gitbook-editor.md)
-* [Live edit and locked edits](the-basics/live-edit-and-locked-edits.md)
-* [Change requests](the-basics/change-requests.md)
+* [LFF (Liquidation Free Funding)](mechanics/lff-liquidation-free-funding.md)
+* [Liquidation](mechanics/liquidation.md)
+* [Funding Rate](mechanics/funding-rate.md)
+* [Lossless AMM](mechanics/lossless-amm.md)
+* [oracles](mechanics/oracles.md)
 
-## Publishing
+## How to's
 
-* [Publishing your content](publishing/publishing-your-content.md)
+* [Connect your wallet](how-tos/connect-your-wallet.md)
+* [Deposit/Withdraw Funds](how-tos/deposit-withdraw-funds.md)
+* [Open Position](how-tos/open-position.md)
+* [Close Position](how-tos/close-position.md)
+* [Add Liquidity](how-tos/add-liquidity.md)
+* [Remove Liquidity](how-tos/remove-liquidity.md)
 
-## Tips and tricks
+## Knowledge base
 
-* [Speed up with quick find](tips-and-tricks/speed-up-with-quick-find.md)
-
-## Next steps
-
-* [What next?](next-steps/what-next.md)
+* [Whitepaper](knowledge-base/whitepaper.md)
+* [Audit Report](knowledge-base/audit-report.md)
+* [Glossary](knowledge-base/glossary.md)

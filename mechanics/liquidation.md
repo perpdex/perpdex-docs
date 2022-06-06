@@ -1,0 +1,5 @@
+# Liquidation
+
+When you take part in a leveraged trade, you are hoping for higher returns on the price of higher risks. Leveraged trade allows you to borrow collateral from the exchange and use that borrowed collateral to purchase another asset such as perpetual futures. There are two things that can happen after you put your position: either market goes with your expectations and start yielding high profit, or the market goes against your expectations and starts diminishing your collateral. Your share of collateral can only bear a specific amount of loss depending on the leverage used, and after that, that loss will surpass your collateral and start affecting the borrower collateral. Just before it could start affecting the borrowed collateral, the exchange will proactively indulge in your position and close it before losses start spreading on borrowed collateral. This process is known as **liquidation**.&#x20;
+
+The margin ratio at which the liquidation process occurs is chosen to be **6.25%**.

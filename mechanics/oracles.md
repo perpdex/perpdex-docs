@@ -1,0 +1,5 @@
+# oracles
+
+Oracles are an important part of decentralization to get data from the outer world. But this also poses many threats to the Defi space resulting in the loss of millions of dollars. PerpDEX recognizes this problem very seriously and in order to avoid such attacks/threats, one can either not use the oracles at all. But since the system has to know the prices of crypto assets from other chains or the outer world (centralized one) to make fair trades possible, one solution is to minimize its use, and the second is to use only trusted oracles.&#x20;
+
+PerpDEX implies both of these solutions into its protocol to achieve maximum security. Unlike the rest of the perpetual futures exchanges, PerpDEX uses oracles only when calculating funding rate, and that too from a trusted and well-reputed oracle network called **ChainLink**. The funding rate is calculated once every hour and that rate is a time-weighted average of the price (TWAP) for the given crypto asset, hence leaving no room for attackers to exploit the system.
