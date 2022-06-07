@@ -17,3 +17,19 @@ PerpDEX is a perpetual futures decentralized exchange (DEX) that brings you Perp
 * &#x20;Multichain support
 * EVM compatible
 * Lossless AMM
+
+
+
+### Comparison&#x20;
+
+Following is a comparison table of PerpDEX with various other protocols that provide Perpetual Futures Contract trading.
+
+|                  | PerpDEX      | dYdX  | MCDEX | Mango Markets | Perpetual Protocol V2 |
+| ---------------- | ------------ | ----- | ----- | ------------- | --------------------- |
+| Open-source      | Yes          | No    | Yes   | Yes           | Yes                   |
+| Liquidation Free | Yes          | No    | No    | No            | No                    |
+| Tokenization     | ERC4626      | No    | No    | No            | No                    |
+| Funding Currency | Base         | Quote | Quote | Quote         | Quote                 |
+| Model            | Lossless AMM | CLOB  | AMM   | CLOB          | AMM                   |
+| Audited          | Yes          | No    | Yes   | No            | No                    |
+

@@ -8,7 +8,7 @@
 * [Liquidation](mechanics/liquidation.md)
 * [Funding Rate](mechanics/funding-rate.md)
 * [Lossless AMM](mechanics/lossless-amm.md)
-* [oracles](mechanics/oracles.md)
+* [Oracles](mechanics/oracles.md)
 
 ## How to's
 
