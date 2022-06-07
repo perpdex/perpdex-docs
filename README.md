@@ -24,12 +24,12 @@ PerpDEX is a perpetual futures decentralized exchange (DEX) that brings you Perp
 
 Following is a comparison table of PerpDEX with various other protocols that provide Perpetual Futures Contract trading.
 
-|                  | PerpDEX      | dYdX  | MCDEX | Mango Markets | Perpetual Protocol V2 |
-| ---------------- | ------------ | ----- | ----- | ------------- | --------------------- |
-| Open-source      | Yes          | No    | Yes   | Yes           | Yes                   |
-| Liquidation Free | Yes          | No    | No    | No            | No                    |
-| Tokenization     | ERC4626      | No    | No    | No            | No                    |
-| Funding Currency | Base         | Quote | Quote | Quote         | Quote                 |
-| Model            | Lossless AMM | CLOB  | AMM   | CLOB          | AMM                   |
-| Audited          | Yes          | No    | Yes   | No            | No                    |
+|                  | PerpDEX              | dYdX  | MCDEX                | Mango Markets        | Perpetual Protocol V2 |
+| ---------------- | -------------------- | ----- | -------------------- | -------------------- | --------------------- |
+| Open-source      | :white\_check\_mark: | :x:   | :white\_check\_mark: | :white\_check\_mark: | :white\_check\_mark:  |
+| Liquidation Free | :white\_check\_mark: | :x:   | :x:                  | :x:                  | :x:                   |
+| Composability    | :white\_check\_mark: | :x:   | :x:                  | :white\_check\_mark: | :x:                   |
+| Funding Currency | Base                 | Quote | Quote                | Quote                | Quote                 |
+| Model            | Lossless AMM         | CLOB  | AMM                  | CLOB                 | AMM                   |
+| Audited          | :white\_check\_mark: | :x:   | :white\_check\_mark: | :x:                  | :x:                   |
 
