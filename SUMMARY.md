@@ -5,6 +5,7 @@
 ## Mechanics
 
 * [LFF (Liquidation Free Funding)](mechanics/lff-liquidation-free-funding.md)
+* [Margin](mechanics/margin.md)
 * [Liquidation](mechanics/liquidation.md)
 * [Funding Rate](mechanics/funding-rate.md)
 * [Lossless AMM](mechanics/lossless-amm.md)
@@ -21,6 +22,7 @@
 
 ## Knowledge base
 
+* [FAQs](knowledge-base/faqs.md)
 * [Whitepaper](knowledge-base/whitepaper.md)
 * [Audit Report](knowledge-base/audit-report.md)
 * [Glossary](knowledge-base/glossary.md)
