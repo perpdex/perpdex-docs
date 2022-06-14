@@ -92,11 +92,11 @@ Emitted when liquidity is added to the market.
 
 **Parameters:**
 
-| Name      | Type    | Description                                 |
-| --------- | ------- | ------------------------------------------- |
-| base      | uint256 | The base amount of pair added in liquidity  |
-| quote     | uin256  | The quote amount of pair added in liquidity |
-| liquidity | uint256 | Liquidity share minted                      |
+| Name      | Type    | Description                                  |
+| --------- | ------- | -------------------------------------------- |
+| base      | uint256 | The base amount of pair added in liquidity   |
+| quote     | uin256  | The quoted amount of pair added in liquidity |
+| liquidity | uint256 | Liquidity share minted                       |
 
 ### LiquidityRemoved
 
