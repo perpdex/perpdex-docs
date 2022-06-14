@@ -20,6 +20,12 @@
 * [Add Liquidity](how-tos/add-liquidity.md)
 * [Remove Liquidity](how-tos/remove-liquidity.md)
 
+## Technical Reference
+
+* [Interfaces](technical-reference/interfaces/README.md)
+  * [IPerpdexExchange](technical-reference/interfaces/iperpdexexchange.md)
+  * [IPerpdexMarket](technical-reference/interfaces/iperpdexmarket.md)
+
 ## Knowledge base
 
 * [FAQs](knowledge-base/faqs.md)
