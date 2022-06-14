@@ -129,7 +129,7 @@ event Swapped(
 )
 ```
 
-
+Emitted when a trade happens i.e., open position or close position in any market direction.
 
 **Parameters:**
 
