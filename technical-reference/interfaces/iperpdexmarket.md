@@ -14,9 +14,9 @@ Returns the symbol of the market.
 
 **Return Values:**
 
-| Type   | Description          |
-| ------ | -------------------- |
-| string | Symbol of the market |
+| Type   | Description                        |
+| ------ | ---------------------------------- |
+| string | Symbol of the market, i.e., BTCUSD |
 
 
 
@@ -30,9 +30,9 @@ Returns the exchange address to which the market belongs to. Exchange is immutab
 
 **Return Values:**
 
-| Type    | Description             |
-| ------- | ----------------------- |
-| address | Address of the exchange |
+| Type    | Description                                          |
+| ------- | ---------------------------------------------------- |
+| address | Smart contract address of deployed PerpDEX Exchange. |
 
 
 
@@ -49,6 +49,8 @@ Returns the mark price of a pair based on the current base and quote amount in t
 | Type    | Description         |
 | ------- | ------------------- |
 | uint256 | Mark price of pair  |
+
+
 
 ## Events
 
@@ -136,6 +138,6 @@ Emitted when a trade happens i.e., open position or close position in any market
 | Name           | Type    | Description                                                                                               |
 | -------------- | ------- | --------------------------------------------------------------------------------------------------------- |
 | isBaseToQuote  | bool    | True if swap is done from base token to quote token which is short and vice-versa.                        |
-| isExactInput   | bool    | True if collateral                                                                                        |
+| isExactInput   | bool    | True if input amount also includes fee in it, otherwise false.                                            |
 | amount         | uint256 | Collateral amount used in swap. It will be base in short and quote in long.                               |
 | oppositeAmount | uint256 | The corresponding opposite amount of swap. If amount is base then oppositeAmount is quote and vice-versa. |
