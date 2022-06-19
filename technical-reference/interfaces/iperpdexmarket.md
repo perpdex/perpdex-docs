@@ -135,9 +135,9 @@ Emitted when a trade happens i.e., open position or close position in any market
 
 **Parameters:**
 
-| Name           | Type    | Description                                                                                               |
-| -------------- | ------- | --------------------------------------------------------------------------------------------------------- |
-| isBaseToQuote  | bool    | True if swap is done from base token to quote token which is short and vice-versa.                        |
-| isExactInput   | bool    | True if input amount also includes fee in it, otherwise false.                                            |
-| amount         | uint256 | Collateral amount used in swap. It will be base in short and quote in long.                               |
-| oppositeAmount | uint256 | The corresponding opposite amount of swap. If amount is base then oppositeAmount is quote and vice-versa. |
+| Name           | Type    | Description                                                                                                                               |
+| -------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| isBaseToQuote  | bool    | True if swap is done from base token to quote token which is short and vice-versa.                                                        |
+| isExactInput   | bool    | True if the entered amount is to be treated as exact input amount, and if false, entered amount will be treated as desired output amount. |
+| amount         | uint256 | Collateral amount used in swap. It will be base in short and quote in long.                                                               |
+| oppositeAmount | uint256 | The corresponding opposite amount of swap. If amount is base then oppositeAmount is quote and vice-versa.                                 |
