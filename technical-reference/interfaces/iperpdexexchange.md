@@ -708,7 +708,7 @@ function getTotalAccountValue(
 )
 ```
 
-Returns the total account value of a trader. This includes all open positions on the taker and maker side and collateral balance.
+Returns the total account value of a trader. This includes unrealized PnL of all open positions on the taker and maker side and collateral balance.
 
 **Parameters:**
 
@@ -733,7 +733,7 @@ function getPositionShare(
 )
 ```
 
-This function returns the cumulative base position share amount of a trader in a specific market.&#x20;
+This function returns the cumulative base position share amount of a trader in a specific market. It takes debt into account and if the base shares are credited, a negative share's value will be returned.
 
 **Parameters:**
 
@@ -759,7 +759,7 @@ function getPositionNotional(
 )
 ```
 
-This function returns the calculated dollar amount of total base position shares of a trader in a given market.
+This function returns the calculated dollar amount of total base position shares of a trader in a given market. If base position shares are in credit, the notional value returned will be negative as well.
 
 **Parameters:**
 
@@ -784,7 +784,7 @@ function getTotalPositionNotional(
 )
 ```
 
-This function returns the calculated dollar amount of total maker side position shares of a trader in all markets.
+This function returns the absolute notional value of all base position shares of a trader in all markets.
 
 **Parameters:**
 
@@ -794,9 +794,9 @@ This function returns the calculated dollar amount of total maker side position 
 
 **Return values:**
 
-| Name | Type    | Description                         |
-| ---- | ------- | ----------------------------------- |
-| -    | uint256 | Total notional value of all markets |
+| Name | Type    | Description                            |
+| ---- | ------- | -------------------------------------- |
+| -    | uint256 | Absolute notional value of all markets |
 
 ### getOpenPositionShare
 
@@ -809,7 +809,7 @@ function getOpenPositionShare(
 )
 ```
 
-DESCRIPTION
+This function returns the cumulative base position share amount of a trader in a specific market. If the base shares are in debt (negative value), it will take absolute and hence only returns a positive base shares value.
 
 **Parameters:**
 
@@ -820,9 +820,9 @@ DESCRIPTION
 
 **Return values:**
 
-| Name | Type    | Description |
-| ---- | ------- | ----------- |
-| -    | uint256 |             |
+| Name | Type    | Description                |
+| ---- | ------- | -------------------------- |
+| -    | uint256 | Base shares absolute value |
 
 ### getOpenPositionNotional
 
@@ -835,20 +835,20 @@ function getOpenPositionNotional(
 )
 ```
 
-DESCRIPTION
+Returns the absolute notional value of base position shares of a trader in a specific market.
 
 **Parameters:**
 
-| Name   | Type    | Description |
-| ------ | ------- | ----------- |
-| trader | address |             |
-| market | address |             |
+| Name   | Type    | Description                |
+| ------ | ------- | -------------------------- |
+| trader | address | Wallet address of trader   |
+| market | address | Contract address of market |
 
 **Return values:**
 
-| Name | Type    | Description |
-| ---- | ------- | ----------- |
-| -    | uint256 |             |
+| Name | Type    | Description                        |
+| ---- | ------- | ---------------------------------- |
+| -    | uint256 | Base share absolute notional value |
 
 ### getTotalOpenPositionNotional
 
@@ -860,19 +860,19 @@ function getTotalOpenPositionNotional(
 )
 ```
 
-DESCRIPTION
+Returns the absolute notional value of base position shares of a trader in all markets.
 
 **Parameters:**
 
-| Name   | Type    | Description |
-| ------ | ------- | ----------- |
-| trader | address |             |
+| Name   | Type    | Description              |
+| ------ | ------- | ------------------------ |
+| trader | address | Wallet address of trader |
 
 **Return values:**
 
-| Name | Type    | Description |
-| ---- | ------- | ----------- |
-| -    | uint256 |             |
+| Name | Type    | Description             |
+| ---- | ------- | ----------------------- |
+| -    | uint256 | Absolute notional value |
 
 ### hasEnoughMaintenanceMargin
 
@@ -924,8 +924,6 @@ This function checks if a trader has enough initial margin to open a new positio
 
 ****
 
-****
-
 ## Events
 
 ### Deposited
@@ -973,7 +971,7 @@ event InsuranceFundTransferred(
 )
 ```
 
-Emitted when insurance fund is transfered from insurance fund's vault into a trader's account
+Emitted when insurance fund is transferred from insurance fund's vault into a trader's account
 
 **Parameters:**
 
