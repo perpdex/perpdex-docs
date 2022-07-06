@@ -122,17 +122,17 @@ struct MaxTradeParams {
 }
 ```
 
-These parameters are passed to maxTrade function. It's used to create an ERC4626 long token.
+These parameters are passed to the maxTrade function. It's used to create an ERC4626 long token.
 
 **Attributes:**
 
-| Name          | Type    | Description                                                                                                                           |
-| ------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| trader        | address | Account on which call is to be made                                                                                                   |
-| market        | address | Market address to for trade                                                                                                           |
-| caller        | address | Actual caller of function                                                                                                             |
-| isBaseToQuote | bool    | True if swap is done from base token to quote token which is short and vice-versa.                                                    |
-| isExactInput  | bool    | True if entered amount is to be treated as exact input amount, and if false, entered amount will be treated as desired output amount. |
+| Name          | Type    | Description                                                                                                                                   |
+| ------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| trader        | address | Account on which call is to be made                                                                                                           |
+| market        | address | Market address to for trade                                                                                                                   |
+| caller        | address | Actual caller of function                                                                                                                     |
+| isBaseToQuote | bool    | True if swap is done from base token to quote token which is short and vice-versa.                                                            |
+| isExactInput  | bool    | True if the entered amount is to be treated as the exact input amount, and if false, entered amount will be treated as desired output amount. |
 
 
 
@@ -214,7 +214,7 @@ function addLiquidity(
 )
 ```
 
-Add liquidity into the liquidity pool of a market.
+Add liquidity into the liquidity pool of a specific market.
 
 **Parameters:**
 
@@ -251,10 +251,10 @@ Remove liquidity from a market by giving out LP shares to the exchange.
 
 **Return values:**
 
-| Name  | Type    | Description                 |
-| ----- | ------- | --------------------------- |
-| base  | uint256 | Base token amount received  |
-| quote | uint256 | Quote token amount received |
+| Name  | Type    | Description                    |
+| ----- | ------- | ------------------------------ |
+| base  | uint256 | The base token amount received |
+| quote | uint256 | Quote token amount received    |
 
 ### trade
 
@@ -412,7 +412,7 @@ function maxTrade(
 )
 ```
 
-This function is used by PerpDEX stable coin. It's used to create an ERC4626 1x long token.
+This function is used by PerpDEX stablecoin. It is used to create an ERC4626 1x long token.
 
 **Parameters:**
 
@@ -476,7 +476,7 @@ function protocolInfo() external view returns (
 )
 ```
 
-This function returns protocolInfo struct object of PerpDEX exchange.
+This function returns protocolInfo struct object of the PerpDEX exchange.
 
 **Return values:**
 
@@ -492,7 +492,7 @@ function settlementToken() external view returns (
 )
 ```
 
-This function returns the address of settlement token. Settlement token is the token used for settlement of perpetual futures on PerpDEX.
+This function returns the address of the settlement token. A settlement token is a token used for the settlement of perpetual futures on PerpDEX.
 
 **Return values:**
 
@@ -577,10 +577,10 @@ This function is used to get the configuration of the liquidation reward ratio a
 
 **Return values:**
 
-| Name          | Type   | Description                                  |
-| ------------- | ------ | -------------------------------------------- |
-| rewardRatio   | uint24 | Value of reward ratio for liquidators        |
-| smoothEmaTime | uint16 | Estimated moving average time interval value |
+| Name          | Type   | Description                                      |
+| ------------- | ------ | ------------------------------------------------ |
+| rewardRatio   | uint24 | Value of reward ratio for liquidators            |
+| smoothEmaTime | uint16 | The estimated moving average time interval value |
 
 ### protocolFeeRatio
 
@@ -884,7 +884,7 @@ function hasEnoughMaintenanceMargin(
 )
 ```
 
-Returns true if given trader's address has enough maintenance margin.
+Returns true if the given trader's address has enough maintenance margin.
 
 **Parameters:**
 

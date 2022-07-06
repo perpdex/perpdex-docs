@@ -28,12 +28,3 @@ PerpDEX is geared with a Two-stage price limit (TSPL) which drastically minimize
 
 
 
-
-
-<details>
-
-<summary>Which coins are supported as collateral?</summary>
-
-For now, only ETH is supported as collateral.
-
-</details>
