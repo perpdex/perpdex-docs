@@ -2,7 +2,7 @@
 
 #### Metamask
 
-* Open PerpDEX App by clicking [here](https://app.perpdex.com)
+* Open PerpDEX App by clicking [here](https://perpdex.com)
 * You'll land on the home screen of the App. From there, click **Connect Wallet** button&#x20;
 * Select **Metamask** as your wallet type.
 * Select **account** from Metamask wallet to connect to App
