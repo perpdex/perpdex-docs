@@ -6,7 +6,7 @@ description: Getting to know
 
 ### 1. Introduction
 
-PerpDEX is a perpetual futures decentralized exchange (DEX) that brings you Perpetual Futures contracts to trade with ease, security, and reliability on Ethereum and Astar Network. PerpDEX offers a number of features and financial tools for both makers and takers. The overall goal of the PerpDEX is to allow anyone to create or trade perpetual futures contracts with ease.
+PerpDEX is a perpetual futures decentralized exchange (DEX) that brings you Perpetual Futures contracts to trade with ease, security, and reliability on Ethereum, zkSync and Astar Network. PerpDEX offers a number of features and financial tools for both makers and takers. The overall goal of the PerpDEX is to allow anyone to create or trade perpetual futures contracts with ease.
 
 #### Salient Features
 
@@ -16,7 +16,7 @@ PerpDEX is a perpetual futures decentralized exchange (DEX) that brings you Perp
 * Leveraged LP for risk takers
 * Liquidation Free Funding
 * Bankruptcy Guard for protocol
-* &#x20;Multichain support
+* Multichain support
 * EVM compatible
 * Lossless AMM
 
